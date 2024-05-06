@@ -8,6 +8,12 @@ The only dependencies of the script are typer, pathlib, and re, and of these, on
 For now, the .log to .p conversion maps only two fields of interest, the sample number and its posterior log-likelihood.
 The code could easily be adapted to include more (or all) columns from the log table, but the column names might have to be mapped to conventional names in .p files.
 
-## Installation
+## Installation and Usage
 
 To install, just clone this repository or download the `beast2bayes.py` script from the `beast2bayes` directory.
+
+To use the script, simply specify the two BEAST files and their respective MrBayes counterparts as follows:
+
+```bash
+python beast2bayes.py beast.trees beast.log mrbayes.t mrbayes.p
+```
